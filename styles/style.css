@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-button: #116dff;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  min-width: 100vw;
+  min-height: 100vh;
+  /* position: relative; */
+}
+html {
+  font-size: 16px;
+}
+.top-nav {
+  height: 3rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  box-shadow: var(--dark-shadow);
+  position: fixed;
+  background-color: white;
+  margin-top: -6rem;
+}
+.logo {
+  width: 5rem;
+}
+.nav-lap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 1rem;
+}
+hr {
+  height: 2rem;
+}
+.nav-lap:hover {
+  color: #5999ff;
+}
+.nav-contents {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.click {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.nav-contents a {
+  color: black;
+  font-size: 1rem;
+}
+.nav-contents a:hover {
+  color: #5999ff;
+}
+.edit {
+  background-color: var(--clr-button);
+  padding: 0.7rem 1.7rem;
+  border-radius: 40px;
+  color: white;
+  font-size: 1.2rem;
+  border-color: transparent;
+}
+/*hero*/
+.hero {
+  width: 100vw;
+  height: 100vh;
+  /* position: relative; */
+  margin-top: 6.1rem;
+  background-image: url(/assets/bg-girl-one.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 1rem 2.5rem;
+  margin-top: 3rem;
+  width: 70rem;
+  margin-left: 6rem;
+}
+.heart,
+.lists,
+.donate {
+  padding: 1rem 3rem;
+  border: 2px solid white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.heart {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.lists {
+  background-color: transparent;
+  color: white;
+}
+.lists:hover {
+  background-color: white;
+  color: black;
+}
+.donate {
+  background-color: rgb(206, 28, 28);
+}
+.donate:hover {
+  background-color: black;
+  color: white;
+}
+/* .contents {
+  width: 60rem;
+} */
+.million {
+  font-size: 5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin-left: 10rem;
+  margin-top: 0.5rem;
+  border: 1px solid white;
+  background-color: white;
+}
+.millions {
+  font-size: 5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin-left: 10rem;
+  margin-top: 2.5rem;
+  border: 1px solid white;
+  background-color: white;
+}
+.never {
+  color: red;
+  margin-top: -5.8rem;
+  margin-left: 9rem;
+}
+.words {
+  margin-left: 10rem;
+  font-size: 1.4rem;
+  color: white;
+  margin-top: 1.2rem;
+}
+.list,
+.change {
+  padding: 1rem 2.5rem;
+  border: 2px solid white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  /* margin-left: 10rem; */
+  background-color: transparent;
+  color: white;
+}
+.three-btn {
+  width: 50rem;
+  margin-left: 10rem;
+}
+.list:hover {
+  background-color: black;
+}
+.change {
+  background-color: rgb(162, 24, 24);
+  color: black;
+}
+.change:hover {
+  background-color: black;
+  color: white;
+}
+.big-box {
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* height: 30rem; */
+}
+.first,
+.second,
+.third {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.voices {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.add,
+.num,
+.voices {
+  padding: 1rem 0;
+}
+.fname {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  height: 4rem;
+  width: 10rem;
+  font-size: 20px;
+}
+
+.lname {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  height: 4rem;
+  width: 10rem;
+  font-size: 20px;
+}
+
+.email {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  height: 4rem;
+  width: 10rem;
+  font-size: 20px;
+}
+
+.subject {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  height: 4rem;
+  width: 10rem;
+  font-size: 20px;
+  margin-bottom: 3rem;
+}
+
+.textarea {
+  margin-top: 1rem;
+  height: 12rem;
+  width: 22rem;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit {
+  height: 3rem;
+  width: 9rem;
+  font-size: 18px;
+  background-color: rgb(200, 17, 17);
+  transition: 0.5s ease-in-out;
+}
+
+.submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.p-four {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.subscribe {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  height: 3rem;
+  width: 9rem;
+  font-size: 18px;
+  background-color: rgb(215, 43, 31);
+  transition: 0.5s ease-in-out;
+}
+
+.subscribe:hover {
+  background-color: black;
+  color: white;
+}
+
+.last-para {
+  height: 12rem;
+  width: 22rem;
+  font-size: 20px;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 6rem;
+}
+.end {
+  margin-left: 10rem;
+  padding: 2rem 0;
+}
